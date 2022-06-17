@@ -6,8 +6,6 @@ import express from "express";
 import cors from "cors";
 import helmet from "helmet";
 import routes from "./routes";
-import { errorHandler } from "./middleware/error.middleware";
-import { notFoundHandler } from "./middleware/not-found.middleware";
 import bodyParser from 'body-parser';
 dotenv.config();
 
@@ -36,8 +34,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(API_ROOT, routes);
-app.use(errorHandler);
-app.use(notFoundHandler);
 
 
 /**
