@@ -10,7 +10,6 @@ class SSEService {
 	}
 
 	public push(result: Result): Result {
-		console.log("SSE push", result);
 		return this.session.push(result);
 	}
 }

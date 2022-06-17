@@ -50,19 +50,3 @@ convertRouter.get("/sse/toroman/:numberStr", async (req: Request, res: Response)
 		res.status(500).send(e.message);
 	}
 });
-
-// convertRouter.get("/sse/toroman/:numberStr", async (req: Request, res: Response) => {
-// 	try {
-// 		const session = await createSession(req, res);
-// 		const result: Result = ConvertService.toRoman(req.params.numberStr);
-
-// 		if (result.errorCode === 0) {
-// 			return session.push(result);
-// 		}
-
-// 		res.status(404).send(result);
-
-// 	} catch (e: any) {
-// 		res.status(500).send(e.message);
-// 	}
-// });
