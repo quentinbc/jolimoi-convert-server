@@ -1,6 +1,7 @@
 # Jolimoi Convert Roman Server
 
-This template should help get you started developing with NodeJS and Typescript
+Test convert integer to roman numeral for Jolimoi.
+Use with front webapp : [jolimoi-convert-webapp](https://github.com/quentinbc/jolimoi-convert-webapp)
 
 
 ## Project Setup
