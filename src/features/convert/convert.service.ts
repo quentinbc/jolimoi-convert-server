@@ -35,7 +35,7 @@ class ConvertService {
 		const num: number = parseInt(str, 10);
 
 		if (num === 0) {
-			return this.returnResult(0, "", '"nulla" : https://en.wikipedia.org/wiki/Roman_numerals#Zero');
+			return this.returnResult(0, "", 'nulla');
 		}
 
 		if (num < 1 || num > 100 || Number.isNaN(Number(num))) {
